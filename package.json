@@ -4,7 +4,9 @@
   "description": "Hubot plugin for high-fiving and optionally sending gift cards to chat users",
   "main": "index.coffee",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register test/*"
+    "test": "mocha --compilers coffee:coffee-script/register test/*",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,8 @@
     "edit-google-spreadsheet": "^0.3.0",
     "ip": "^0.3.2",
     "lodash": "^4.17.5",
-    "moment": "^2.8.4"
-  }
+    "moment": "^2.8.4",
+    "snyk": "^1.104.2"
+  },
+  "snyk": true
 }
